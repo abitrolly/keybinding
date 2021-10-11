@@ -114,6 +114,7 @@ var supportedKeybindings = map[string]gocui.Key{
 
 // Key contains all relevant information about the key
 type Key struct {
+	// Value is either `rune` for single key or `gocui.Key`
 	Value    interface{}
 	Modifier gocui.Modifier
 	Tokens   []string

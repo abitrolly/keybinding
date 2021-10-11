@@ -36,6 +36,7 @@ func TestParse(t *testing.T) {
 		{"ctrl + alt + !", 0, gocui.ModAlt, "unsupported keybinding: KeyCtrl! (+1)"},
 		{"q", rune('q'), gocui.ModNone, ""},
 		{" q", rune('q'), gocui.ModNone, ""},
+		{" Q", rune('q'), gocui.ModNone, ""},
 	}
 
 	for idx, trial := range table {

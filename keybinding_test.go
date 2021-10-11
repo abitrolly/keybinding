@@ -15,8 +15,8 @@ func TestParse(t *testing.T) {
 	}{
 		{"ctrl + A", gocui.KeyCtrlA, gocui.ModNone, ""},
 		{"Ctrl + a", gocui.KeyCtrlA, gocui.ModNone, ""},
-		{"Ctl + a", gocui.KeyCtrlA, gocui.ModNone, ""},
-		{"ctl + A", gocui.KeyCtrlA, gocui.ModNone, ""},
+		{"Ctl + a", 0, gocui.ModNone, "unsupported keybinding: KeyCtlA"},
+		{"ctl + A", 0, gocui.ModNone, "unsupported keybinding: KeyCtlA"},
 		{"f2", gocui.KeyF2, gocui.ModNone, ""},
 		{"ctrl +    [", gocui.KeyCtrlLsqBracket, gocui.ModNone, ""},
 		{"    ctrl +    ]   ", gocui.KeyCtrlRsqBracket, gocui.ModNone, ""},

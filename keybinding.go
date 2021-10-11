@@ -18,13 +18,11 @@ var translate = map[string]string{
 	"~":        "Tilde",
 	"pageup":   "Pgup",
 	"pagedown": "Pgdn",
-	"pgup":     "Pgup",
 	"pgdown":   "Pgdn",
 	"up":       "ArrowUp",
 	"down":     "ArrowDown",
 	"right":    "ArrowRight",
 	"left":     "ArrowLeft",
-	"ctl":      "Ctrl",
 }
 
 var display = map[string]string{
